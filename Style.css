@@ -157,4 +157,18 @@ nav a:hover {
     h2 {
         font-size: 1.6em;
     }
+
+    /* Systems Design Columns */
+.systems-design-columns {
+    display: flex;
+    flex-direction: row; /* Aligns the paragraphs side by side */
+    justify-content: space-between; /* Ensures there is space between the two columns */
+    gap: 20px; /* Adds some space between the columns */
+}
+
+.systems-design-columns p {
+    flex: 1; /* Ensures each paragraph takes up equal space */
+    font-size: 1.1em;
+    line-height: 1.8;
+}
 }
