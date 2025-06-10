@@ -1,29 +1,35 @@
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #121212;
-  color: #f5f5f5;
+  background: linear-gradient(to right, #111, #1a1a1a);
+  color: #f0f0f0;
   margin: 0;
   padding: 0;
   line-height: 1.6;
 }
 
+/* Title banner with background image and gradient overlay */
 .title {
   text-align: center;
   font-size: 2.5em;
   font-weight: bold;
-  color: white;
-  padding: 80px 20px;
-  background: linear-gradient(to right, #00bcd4, #7c4dff);
-  box-shadow: 0 0 30px rgba(0, 188, 212, 0.4);
+  color: #ffffff;
+  padding: 100px 20px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url("https://source.unsplash.com/1600x400/?technology,network,futuristic");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   position: relative;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
 }
 
 .title span {
   position: relative;
   z-index: 1;
-  text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  text-shadow: 0 0 10px #00ffe0;
 }
 
+/* Grid layout container */
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -33,8 +39,9 @@ body {
   margin: auto;
 }
 
+/* Content card */
 .box {
-  background-color: #1e1e1e;
+  background-color: #1e1e2f;
   padding: 25px;
   border-radius: 12px;
   box-shadow: 0 0 15px rgba(0, 188, 212, 0.2);
@@ -48,15 +55,14 @@ body {
 }
 
 .box h2 {
-  margin-top: 0;
-  font-size: 1.5em;
-  color: #00bcd4;
+  font-size: 1.6em;
+  color: #00e5ff;
 }
 
 .box h3 {
   margin-top: 1em;
   font-size: 1.2em;
-  color: #7c4dff;
+  color: #e040fb;
 }
 
 .box ul {
@@ -67,6 +73,7 @@ body {
   margin-bottom: 10px;
 }
 
+/* Image row styling */
 .image-row {
   display: flex;
   justify-content: center;
@@ -76,37 +83,39 @@ body {
 }
 
 .image-column {
-  flex: 1 1 300px; /* Grow/shrink to fit space, min 300px */
+  flex: 1 1 300px;
   max-width: 100%;
 }
 
 .image-column img {
   width: 100%;
   height: auto;
-  display: block;
   border-radius: 10px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-  transition: transform 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .image-column img:hover {
   transform: scale(1.05);
-}
+  box-shadow: 0 0 30px rgba(0, 255, 255, 0.5);
 }
 
+/* References section with frosted-glass feel */
 .references {
-  padding: 40px 20px;
-  background-color: #1e1e1e;
+  padding: 50px 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(8px);
   border-top: 2px solid #00bcd4;
   font-size: 1em;
-  color: #f5f5f5;
+  color: #e0e0e0;
+  box-shadow: inset 0 0 10px rgba(0, 188, 212, 0.1);
 }
 
 .references h2 {
   font-size: 1.6em;
   margin-bottom: 20px;
   text-align: center;
-  color: #00bcd4;
+  color: #00e5ff;
 }
 
 .references ul {
@@ -123,10 +132,12 @@ body {
 }
 
 .references a {
-  color: #18ffff;
+  color: #00e5ff;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 .references a:hover {
+  color: #18ffff;
   text-decoration: underline;
 }
