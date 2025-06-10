@@ -69,23 +69,29 @@ body {
 
 .image-row {
   display: flex;
-  gap: 20px;
   justify-content: center;
   flex-wrap: wrap;
+  gap: 20px;
   margin-top: 30px;
 }
 
-.image-row img {
+.image-column {
+  flex: 1 1 300px; /* Grow/shrink to fit space, min 300px */
+  max-width: 100%;
+}
+
+.image-column img {
   width: 100%;
-  max-width: 300px;
   height: auto;
+  display: block;
   border-radius: 10px;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
   transition: transform 0.3s ease;
 }
 
-.image-row img:hover {
+.image-column img:hover {
   transform: scale(1.05);
+}
 }
 
 .references {
