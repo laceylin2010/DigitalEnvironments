@@ -158,5 +158,16 @@ nav a:hover {
         font-size: 1.6em;
     }
 
+/* Systems Design Image */
+.systems-design-image {
+    text-align: center; /* Centers the image */
+    margin-top: 20px; /* Adds space between the text and the image */
+}
+
+.systems-design-image img {
+    max-width: 100%; /* Ensures the image scales responsively */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 8px; /* Adds rounded corners to the image */
+}
 
 }
