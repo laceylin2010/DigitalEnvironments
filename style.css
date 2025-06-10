@@ -78,7 +78,7 @@ body {
   }
 
  .image-row img {
-  width: 100%;
+  width: 50%;
   max-width: 300px;  /* Matches your other images */
   height: auto;
   border-radius: 8px;
