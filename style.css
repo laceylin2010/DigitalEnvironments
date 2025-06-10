@@ -40,21 +40,7 @@ body {
   gap: 20px;
   padding: 20px;
 }
-  .image-row {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 20px;
-  }
 
- .image-row img {
-  width: 100%;
-  max-width: 300px;  /* Matches your other images */
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
 .box {
   background-color: #ffffff;
@@ -81,6 +67,22 @@ body {
 
 .box li {
   margin-bottom: 10px;
+}
+
+  .image-row {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+ .image-row img {
+  width: 100%;
+  max-width: 300px;  /* Matches your other images */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 .references {
